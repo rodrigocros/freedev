@@ -1,2 +1,2 @@
 # freedev
-Aplication for franlance to devs.
+Freelance app for devs
