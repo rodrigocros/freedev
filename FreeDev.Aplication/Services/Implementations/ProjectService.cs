@@ -44,7 +44,7 @@ public class ProjectService : IProjectService
     {
         var projects = _context.Projects
             .Where(p => p.Title.Contains(query) || p.Description.Contains(query))
-            .Select(p => new ProjectViewModel(p.Title, p.CreatedAt))
+            .Select(p => new ProjectViewModel(p.Id,p.Title, p.CreatedAt))
             .ToList();
         
         return projects;
