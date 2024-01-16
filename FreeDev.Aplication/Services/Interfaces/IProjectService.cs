@@ -5,7 +5,7 @@ namespace FreeDev.Aplication.Services.Interfaces;
 
 public interface IProjectService
 {
-    List<ProjectViewModel> GetAll(string query);
+    List<ProjectViewModel> GetAll();
     ProjectDetailsViewModel GetByID(int id);
 
     int Create(NewProjectInputModel inputModel);

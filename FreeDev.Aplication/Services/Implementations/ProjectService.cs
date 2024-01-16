@@ -40,14 +40,11 @@ public class ProjectService : IProjectService
         project.Finish();
     }
 
-    public List<ProjectViewModel> GetAll(string query)
+    public List<ProjectViewModel> GetAll()
     {
-        var projects = _context.Projects
-            .Where(p => p.Title.Contains(query) || p.Description.Contains(query))
-            .Select(p => new ProjectViewModel(p.Id,p.Title, p.CreatedAt))
-            .ToList();
-        
-        return projects;
+        var projects = _context.Projects.ToList();
+        var projectViewModel = projects.Select(p => new ProjectViewModel(p.Id,p.Title, p.CreatedAt));
+        return projectViewModel.ToList();
     }
 
     public ProjectDetailsViewModel GetByID(int id)

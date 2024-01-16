@@ -20,9 +20,9 @@ public class ProjectsController : ControllerBase
 
     //Projects?query=Rodrigo
     [HttpGet]
-    public IActionResult GetProjects(string query)
+    public IActionResult GetProjects()
     {
-        var projects = _projectService.GetAll(query);
+        var projects = _projectService.GetAll();
         return Ok(projects);
     }
 
@@ -30,6 +30,10 @@ public class ProjectsController : ControllerBase
     public IActionResult GetProjectByID(int id)
     {
         var project = _projectService.GetByID(id);
+        if(project == null) 
+        {
+            return NotFound();
+        }
         return Ok(project);
     }
 

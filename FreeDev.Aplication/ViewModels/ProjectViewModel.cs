@@ -3,7 +3,7 @@ namespace FreeDev.Aplication.ViewModels;
 public class ProjectViewModel
 {
     public ProjectViewModel(int Id,string title, DateTime createdAt)
-    {
+    {   
         this.Id = Id;
         Title = title;
         CreatedAt = createdAt;
