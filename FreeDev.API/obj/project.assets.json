@@ -108,6 +108,20 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "FreeDev.Aplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeDev.Core": "1.0.0",
+          "FreeDev.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FreeDev.Aplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeDev.Aplication.dll": {}
+        }
+      },
       "FreeDev.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -116,6 +130,19 @@
         },
         "runtime": {
           "bin/placeholder/FreeDev.Core.dll": {}
+        }
+      },
+      "FreeDev.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FreeDev.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FreeDev.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FreeDev.Infrastructure.dll": {}
         }
       }
     }
@@ -471,15 +498,27 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "FreeDev.Aplication/1.0.0": {
+      "type": "project",
+      "path": "../FreeDev.Aplication/FreeDev.Aplication.csproj",
+      "msbuildProject": "../FreeDev.Aplication/FreeDev.Aplication.csproj"
+    },
     "FreeDev.Core/1.0.0": {
       "type": "project",
       "path": "../FreeDev.Core/FreeDev.Core.csproj",
       "msbuildProject": "../FreeDev.Core/FreeDev.Core.csproj"
+    },
+    "FreeDev.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FreeDev.Infrastructure/FreeDev.Infrastructure.csproj",
+      "msbuildProject": "../FreeDev.Infrastructure/FreeDev.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FreeDev.Aplication >= 1.0.0",
       "FreeDev.Core >= 1.0.0",
+      "FreeDev.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -510,8 +549,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/FreeDev.Aplication.csproj": {
+              "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/FreeDev.Aplication.csproj"
+            },
             "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj": {
               "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj"
+            },
+            "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj": {
+              "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj"
             }
           }
         }

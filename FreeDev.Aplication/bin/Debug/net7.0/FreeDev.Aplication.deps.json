@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FreeDev.Aplication/1.0.0": {
+        "dependencies": {
+          "FreeDev.Core": "1.0.0",
+          "FreeDev.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "FreeDev.Aplication.dll": {}
+        }
+      },
+      "FreeDev.Core/1.0.0": {
+        "runtime": {
+          "FreeDev.Core.dll": {}
+        }
+      },
+      "FreeDev.Infrastructure/1.0.0": {
+        "dependencies": {
+          "FreeDev.Core": "1.0.0"
+        },
+        "runtime": {
+          "FreeDev.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FreeDev.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeDev.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeDev.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

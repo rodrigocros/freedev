@@ -10,5 +10,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FreeDev.Core\FreeDev.Core.csproj" />
+    <ProjectReference Include="..\FreeDev.Infrastructure\FreeDev.Infrastructure.csproj" />
+    <ProjectReference Include="..\FreeDev.Aplication\FreeDev.Aplication.csproj" />
   </ItemGroup>
 </Project>

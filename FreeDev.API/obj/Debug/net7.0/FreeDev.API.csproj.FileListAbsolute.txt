@@ -31,3 +31,9 @@
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/obj/Debug/net7.0/FreeDev.API.pdb
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/obj/Debug/net7.0/FreeDev.API.genruntimeconfig.cache
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/obj/Debug/net7.0/ref/FreeDev.API.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Aplication.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Core.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Core.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Infrastructure.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/FreeDev.Aplication.pdb

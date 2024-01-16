@@ -1,0 +1,17 @@
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Aplication.deps.json
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Aplication.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Aplication.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Core.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Infrastructure.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/bin/Debug/net7.0/FreeDev.Core.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.csproj.AssemblyReference.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.AssemblyInfoInputs.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.AssemblyInfo.cs
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.csproj.CoreCompileInputs.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.csproj.CopyComplete
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/refint/FreeDev.Aplication.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/FreeDev.Aplication.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/obj/Debug/net7.0/ref/FreeDev.Aplication.dll

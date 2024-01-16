@@ -1,0 +1,15 @@
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Infrastructure.deps.json
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Infrastructure.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Core.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Core.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.csproj.AssemblyReference.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.AssemblyInfoInputs.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.AssemblyInfo.cs
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.csproj.CopyComplete
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/refint/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.pdb
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/ref/FreeDev.Infrastructure.dll

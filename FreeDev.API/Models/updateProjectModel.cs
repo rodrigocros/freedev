@@ -1,6 +1,6 @@
 namespace FreeDev.API.Models;
 
-public class updateProjectModel
+public class UpdateProjectModel
 {
     public string Description { get; set; }
 }

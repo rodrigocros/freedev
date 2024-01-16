@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v7.0": {
       "FreeDev.API/1.0.0": {
         "dependencies": {
+          "FreeDev.Aplication": "1.0.0",
+          "FreeDev.Core": "1.0.0",
+          "FreeDev.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.11",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -72,6 +75,28 @@
             "fileVersion": "6.5.0.0"
           }
         }
+      },
+      "FreeDev.Aplication/1.0.0": {
+        "dependencies": {
+          "FreeDev.Core": "1.0.0",
+          "FreeDev.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "FreeDev.Aplication.dll": {}
+        }
+      },
+      "FreeDev.Core/1.0.0": {
+        "runtime": {
+          "FreeDev.Core.dll": {}
+        }
+      },
+      "FreeDev.Infrastructure/1.0.0": {
+        "dependencies": {
+          "FreeDev.Core": "1.0.0"
+        },
+        "runtime": {
+          "FreeDev.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -129,6 +154,21 @@
       "sha512": "sha512-OvbvxX+wL8skxTBttcBsVxdh73Fag4xwqEU2edh4JMn7Ws/xJHnY/JB1e9RoCb6XpDxUF3hD9A0Z1lEUx40Pfw==",
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    },
+    "FreeDev.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeDev.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FreeDev.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
