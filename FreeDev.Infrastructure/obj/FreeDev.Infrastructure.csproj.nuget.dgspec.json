@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj",
+        "projectName": "FreeDev.Core",
+        "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj",
+        "packagesPath": "/Users/rodrigocostadarosa/.nuget/packages/",
+        "outputPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rodrigocostadarosa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj",
+        "projectName": "FreeDev.Infrastructure",
+        "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/FreeDev.Infrastructure.csproj",
+        "packagesPath": "/Users/rodrigocostadarosa/.nuget/packages/",
+        "outputPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rodrigocostadarosa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj": {
+                "projectPath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Core/FreeDev.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
