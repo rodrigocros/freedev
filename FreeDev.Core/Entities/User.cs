@@ -28,6 +28,7 @@ public class User : BaseEntity
     public List<Project> Projects { get; private set; }
     public List<Project> ProjectsAsFreelancer { get; private set; }
     public List<Project> ProjectsAsClient { get; private set; }
+    public List<ProjectComment> ProjectComments { get; private set; }
 
 
 
