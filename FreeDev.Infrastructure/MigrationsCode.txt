@@ -1,0 +1,3 @@
+dotnet ef database update -s ../FreeDev.API/FreeDev.API.csproj
+
+dotnet ef migrations add InitialMigration -s ../FreeDev.API/FreeDev.API.csproj -o ./Persistence/Migrations

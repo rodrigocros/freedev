@@ -3,7 +3,11 @@
     <ProjectReference Include="..\FreeDev.Core\FreeDev.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Audit.EntityFramework.Core" Version="23.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
   <PropertyGroup>

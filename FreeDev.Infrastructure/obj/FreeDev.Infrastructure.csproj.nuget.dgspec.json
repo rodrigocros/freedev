@@ -95,9 +95,15 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Audit.EntityFramework.Core": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[23.0.0, )"
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

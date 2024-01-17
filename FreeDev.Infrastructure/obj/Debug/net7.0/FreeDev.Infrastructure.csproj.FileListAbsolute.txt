@@ -13,3 +13,5 @@
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/refint/FreeDev.Infrastructure.dll
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.pdb
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/ref/FreeDev.Infrastructure.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/bin/Debug/net7.0/FreeDev.Infrastructure.runtimeconfig.json
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Infrastructure/obj/Debug/net7.0/FreeDev.Infrastructure.genruntimeconfig.cache
