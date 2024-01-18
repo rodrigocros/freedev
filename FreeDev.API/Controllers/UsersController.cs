@@ -1,6 +1,8 @@
 using FreeDev.API.Models;
+using FreeDev.Aplication.Commands.User;
 using FreeDev.Aplication.InputModels;
 using FreeDev.Aplication.Services.Interfaces;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FreeDev.API.Controllers;
@@ -9,11 +11,13 @@ namespace FreeDev.API.Controllers;
 [Route("[controller]")]
 public class UsersController : ControllerBase
 {
+    private readonly IMediator _mediator;
     private readonly IProjectService _projectService;
     private readonly IUserService _userService;
 
-    public UsersController(IProjectService projectService, IUserService userService)
+    public UsersController(IProjectService projectService, IUserService userService, IMediator mediator)
     {
+        _mediator = mediator;
         _projectService = projectService;
         _userService = userService;
     }
@@ -33,10 +37,10 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Register([FromBody]NewUserInputModel newUserInputModel)
+    public async Task<IActionResult> Register([FromBody]CreateUserCommand newUser)
     {
-        var id = _userService.Create(newUserInputModel);
-        return CreatedAtAction(nameof(GetUserByID), new { id = id }, newUserInputModel);
+        var id = await _mediator.Send(newUser);
+        return CreatedAtAction(nameof(GetUserByID), new { id = id }, newUser);
     }
 
     [HttpPost("login")]
