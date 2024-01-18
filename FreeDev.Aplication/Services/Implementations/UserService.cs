@@ -17,6 +17,7 @@ public class UserService : IUserService
     {
         var user = new User(inputModel.Name, inputModel.Email, inputModel.BirthDate);
         _context.Users.Add(user);
+        _context.SaveChanges();
 
         return user.Id;
     }
@@ -25,17 +26,14 @@ public class UserService : IUserService
     {
         var user = _context.Users.FirstOrDefault(u => u.Id == id);
         _context.Users.Remove(user);
+        _context.SaveChanges();
 
     }
 
-    public List<UserViewModel> GetAll(string query)
+    public List<UserViewModel> GetAllUsers()
     {
-        var users = _context.Users
-            .Where(u => u.Name.Contains(query) || u.Email.Contains(query))
-            .Select(u => new UserViewModel(u.Id, u.Name, u.Email, u.BirthDate))
-            .ToList();
-        
-        return users;
+        var users = _context.Users.ToList();
+        return users.Select(u => new UserViewModel(u.Id, u.Name, u.Email, u.BirthDate)).ToList();
     }
 
     public UserViewModel GetByID(int id)
@@ -49,6 +47,7 @@ public class UserService : IUserService
     {
         var user = _context.Users.FirstOrDefault(u => u.Id == id);
         _context.Users.Remove(user);
+        _context.SaveChanges();
         
     }
 }

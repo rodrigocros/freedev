@@ -3,6 +3,9 @@
     <ProjectReference Include="..\FreeDev.Infrastructure\FreeDev.Infrastructure.csproj" />
     <ProjectReference Include="..\FreeDev.Core\FreeDev.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

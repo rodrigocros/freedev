@@ -1,6 +1,8 @@
 using FreeDev.API.Models;
+using FreeDev.Aplication.Commands.CreateProject;
 using FreeDev.Aplication.InputModels;
 using FreeDev.Aplication.Services.Interfaces;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FreeDev.API.Controllers;
@@ -12,8 +14,11 @@ public class ProjectsController : ControllerBase
     private readonly IProjectService _projectService;
     private readonly IUserService _userService;
 
-    public ProjectsController(IProjectService projectService, IUserService userService)
+    private readonly IMediator _mediator;
+
+    public ProjectsController(IProjectService projectService, IUserService userService, IMediator mediator)
     {
+        _mediator = mediator;
         _projectService = projectService;
         _userService = userService;
     }
@@ -38,13 +43,13 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateProject([FromBody] NewProjectInputModel project)
+    public async Task<IActionResult> CreateProject([FromBody] CreateProjectCommand project)
     {
         if(project == null || project.Description.Length > 50) 
         {
             return BadRequest();
         }
-        var id = _projectService.Create(project);
+        var id = await _mediator.Send(project);
         return CreatedAtAction(nameof(GetProjectByID), new { id = id }, project);
     }
 

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "msddtQq5JE9F1DWBFyBN9tqbJZTnYco2Il8EpaGlSe3zQog2pcEdLk3fXC2HJAy5DBaVOWU4U+1RsAtY+9917Q==",
+  "dgSpecHash": "PPVFQFYr9Tg7RTteqVB4Yr/sKh6L7szoUnx5FmJKmfivLn8HU8CX6Opc7cYSp1e00763/q+icmqoqP2YkF4ljQ==",
   "success": true,
   "projectFilePath": "/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.Aplication/FreeDev.Aplication.csproj",
   "expectedPackageFiles": [
+    "/Users/rodrigocostadarosa/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/Users/rodrigocostadarosa/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/rodrigocostadarosa/.nuget/packages/microsoft.entityframeworkcore/7.0.2/microsoft.entityframeworkcore.7.0.2.nupkg.sha512",
     "/Users/rodrigocostadarosa/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.2/microsoft.entityframeworkcore.abstractions.7.0.2.nupkg.sha512",
     "/Users/rodrigocostadarosa/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.2/microsoft.entityframeworkcore.analyzers.7.0.2.nupkg.sha512",

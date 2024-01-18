@@ -7,7 +7,7 @@ public interface IUserService
 {
     int Create(NewUserInputModel inputModel);
     void Delete(int id);
-    List<UserViewModel> GetAll(string query);
+    List<UserViewModel> GetAllUsers();
     UserViewModel GetByID(int id);
     void Update(int id, UpdateUserInputModel inputModel);
 }

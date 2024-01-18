@@ -47,3 +47,6 @@
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/Mono.TextTemplating.dll
 /Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/System.CodeDom.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/MediatR.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/MediatR.Contracts.dll
+/Users/rodrigocostadarosa/Desktop/Github/freedev/FreeDev.API/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

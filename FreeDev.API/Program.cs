@@ -1,12 +1,13 @@
+using FreeDev.Aplication.Commands.CreateProject;
 using FreeDev.Aplication.Services.Implementations;
 using FreeDev.Aplication.Services.Interfaces;
 using FreeDev.Infrastructure.Percistence;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
@@ -15,6 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddMediatR(typeof(CreateProjectCommand));
 
 var connectionString = builder.Configuration.GetConnectionString("FreeDevDb");
 builder.Services.AddDbContext<FreeDevDbContext>(options =>
@@ -22,10 +24,7 @@ builder.Services.AddDbContext<FreeDevDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
-
-
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
