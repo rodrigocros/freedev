@@ -1,7 +1,13 @@
 using FreeDev.API.Models;
 using FreeDev.Aplication.Commands.CreateProject;
+using FreeDev.Aplication.Commands.Project.CreateComment;
+using FreeDev.Aplication.Commands.Project.DeleteProject;
+using FreeDev.Aplication.Commands.Project.FinishProject;
+using FreeDev.Aplication.Commands.Project.StartProject;
+using FreeDev.Aplication.Commands.Project.UpadateProject;
 using FreeDev.Aplication.InputModels;
-using FreeDev.Aplication.Services.Interfaces;
+using FreeDev.Aplication.Queries.Project.GetAllProject;
+using FreeDev.Aplication.Queries.Project.GetProjectByID;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,35 +17,29 @@ namespace FreeDev.API.Controllers;
 [Route("[controller]")]
 public class ProjectsController : ControllerBase
 {
-    private readonly IProjectService _projectService;
-    private readonly IUserService _userService;
 
     private readonly IMediator _mediator;
 
-    public ProjectsController(IProjectService projectService, IUserService userService, IMediator mediator)
+    public ProjectsController(IMediator mediator)
     {
         _mediator = mediator;
-        _projectService = projectService;
-        _userService = userService;
     }
 
     //Projects?query=Rodrigo
     [HttpGet]
-    public IActionResult GetProjects()
+    public async Task<IActionResult> GetProjects()
     {
-        var projects = _projectService.GetAll();
+        var GetAllProject = new GetAllProjectsQuery();
+        var projects = await _mediator.Send(GetAllProject);
         return Ok(projects);
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetProjectByID(int id)
+    public async  Task<IActionResult> GetProjectByID(int id)
     {
-        var project = _projectService.GetByID(id);
-        if(project == null) 
-        {
-            return NotFound();
-        }
-        return Ok(project);
+        var project = new GetProjectByIdQuery(id);
+        var projectDetails = await _mediator.Send(project);
+        return Ok(projectDetails);
     }
 
     [HttpPost]
@@ -54,45 +54,47 @@ public class ProjectsController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public IActionResult UpdateProject(int id, [FromBody] UpdateProjectInputModel inputModel)
+    public async Task<IActionResult> UpdateProject(int id, [FromBody] UpdateProjectCommand inputModel)
     {
         if(inputModel == null || inputModel.Description.Length > 50) 
         {
             return BadRequest();
         }
-        _projectService.Update(inputModel);
+        await _mediator.Send(inputModel);
         return NoContent();
-    }
+     }
     [HttpDelete("{id}")]
-    public IActionResult DeleteProject(int id)
+    public async Task<IActionResult> DeleteProject(int id)
     {
-        _projectService.Delete(id);
+        var command = new DeleteProjectCommand(id);
+        await _mediator.Send(command);
         return NoContent();
     }
 
     [HttpPost("{id}/comments")]
-    public IActionResult CreateComment(int id, [FromBody] NewProjectCommentInputModel comment)
+    public IActionResult CreateComment(int id, [FromBody] CreateCommentCommand comment)
     {
         if(comment == null || comment.Content.Length > 50) 
         {
             return BadRequest();
         }
-        _projectService.CreateComment(comment);
+        comment.IdProject = id;
+        _mediator.Send(comment);
         return NoContent();
     }
 
     [HttpPut("{id}/start")]
-    public IActionResult StartProject(int id)
+    public async Task<IActionResult> StartProject(int id)
     {
-        _projectService.Start(id);
+        await _mediator.Send(new StartProjectCommand(id));
         return NoContent();
     }
 
     //finish
     [HttpPut("{id}/finish")]
-    public IActionResult FinishProject(int id)
+    public async Task<IActionResult> FinishProject(int id)
     {
-        _projectService.Finish(id);
+        await _mediator.Send(new FinishProjectCommand(id));
         return NoContent();
     }
 

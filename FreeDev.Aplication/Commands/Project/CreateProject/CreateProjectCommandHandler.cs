@@ -13,7 +13,7 @@ public class CreateProjectCommandHandler : IRequestHandler<CreateProjectCommand,
     }
     public async Task<int> Handle(CreateProjectCommand request, CancellationToken cancellationToken)
     {
-        var project = new Project(request.Tittle, request.Description, request.IdClient, request.IdFreelancer, request.TotalCost);
+        var project = new Core.Entities.Project(request.Tittle, request.Description, request.IdClient, request.IdFreelancer, request.TotalCost);
         await _context.Projects.AddAsync(project);
         await _context.SaveChangesAsync();
 

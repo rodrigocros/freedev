@@ -1,7 +1,8 @@
 using FreeDev.API.Models;
 using FreeDev.Aplication.Commands.User;
 using FreeDev.Aplication.InputModels;
-using FreeDev.Aplication.Services.Interfaces;
+using FreeDev.Aplication.Queries.User.GetAllUsers;
+using FreeDev.Aplication.Queries.User.GetUserById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,27 +13,24 @@ namespace FreeDev.API.Controllers;
 public class UsersController : ControllerBase
 {
     private readonly IMediator _mediator;
-    private readonly IProjectService _projectService;
-    private readonly IUserService _userService;
 
-    public UsersController(IProjectService projectService, IUserService userService, IMediator mediator)
+    public UsersController(IMediator mediator)
     {
         _mediator = mediator;
-        _projectService = projectService;
-        _userService = userService;
     }
 
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        var users = _userService.GetAllUsers();
+        var users = await _mediator.Send(new GetAllUsersQuery());
         return Ok(users);
+     
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetUserByID(int id)
+    public async Task<IActionResult> GetUserByID(int id)
     {
-        var user = _userService.GetByID(id);
+        var user = await _mediator.Send(new GetUserByIdQuery(id));
         return Ok(user);
     }
 
